@@ -1,0 +1,40 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main-nav.ejs %>
+<main class="mt-5 ">
+  
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 30rem;">
+           
+          <div class=" card-body">
+            <h5 class="card-title">Reach Me!</h5>
+            <p class="card-text"><ul class="list-group list-group-flush">
+              <li class="list-group-item"><a class="link-url" href="mailto:dpietroc@my.centennialcollege.ca"><i class="bi bi-envelope"></i> dpietroc@my.centennialcollege.ca</a></li>
+              <li class="list-group-item"><i class="bi bi-telephone-fill"></i> +1 (437) xxx-xxxx</li>
+            </ul></p>
+            <a href="https://github.com/David02P" target="_blank" class="btn btn-primary"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/pietrocoladavid/" target="_blank" class="btn btn-primary"><i class="bi bi-linkedin"></i></i></a>
+          </div>
+        </div>
+        
+      </div>
+     
+      <div class="col">
+        
+        <form action="/index" method="post">
+          <div class="mb-3">
+            <label for="email" class="form-label">How can I contact you?</label>
+            <input name="email" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div> 
+    </div>
+  </div>
+</main>
+<%- include partials/bottom-nav.ejs %>
+</body>
+
+<% include partials/footer.ejs %>   

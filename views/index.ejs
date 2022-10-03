@@ -1,0 +1,100 @@
+<!--
+ |   Assignment:  COMP229 - Personal Portfolio
+ |       Author:  Pietrocola David, dpietroc@my.centennialcollege.ca
+ |
+ |       Course:  COMP229
+ |   Instructor:  Malek Zakiyabanu
+ |     Due Date:  2022-10-02
+ |
+ |  Description:  Developing a personal portfolio website using Node.js and Express.
+ |
+ |     Language:  JavaScript,HMTL,CSS
+ |                
+ | Deficiencies:  Huge difficulties in understanding the concept of routing and how to use it.
+ -->
+
+
+<%- include partials/header.ejs %>
+
+<%- include partials/main-nav.ejs %>
+
+    
+<% if (title == "Home"){ %>
+    <main class="container ">
+      <div class="bg-light p-5 rounded-lg m-3 glass mt-5">
+        <h1 class="display-1">Welcome!</h1>
+        
+        <h1 class="display-4 mb-5"><small class="text-muted">"Let your passion crush your fear"</small></h1>
+        
+        <a class="nav-link mt-5" aria-current="page" href="/about">
+          <button type="button" class="btn btn-primary">About Me</button></a>
+        
+       </div>
+    </main>
+    <% }%>
+
+<% if (title == "Projects"){ %>
+<main class="container mt-3">
+  <h1 class="display-4">Projects</h1>
+  
+  <div class="mt-5 row row-cols-1 row-cols-md-3 g-4 mb-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/tictactoe.jpg" class="card-img-top" alt="TicTacToe">
+        <div class="card-body">
+          <h5 class="card-title">TicTacToe</h5>
+          <p class="card-text">A program that replicates the popular game TicTacToe, it includes an elegant UI, with accessible commands.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">C#, WFA</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/calculator.png" class="card-img-top" alt="calculator">
+        <div class="card-body">
+          <h5 class="card-title">Calculator</h5>
+          <p class="card-text">A useful and stylish scientific calculator, for everyday-usage!</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">C#, WFA</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/gallery.png" class="card-img-top" alt="carousel">
+        <div class="card-body">
+          <h5 class="card-title">Photo gallery</h5>
+          <p class="card-text">A web-based game carousel of pictures, built with AJAX techniques.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">JS, AJAX, HTML, CSS</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-lg btn-primary" disabled>Work in progress...</button>
+      </div>
+    </div>
+  </div>
+</main>
+<% }%>
+
+<% if (title == "Services"){ %>
+  <main class="container ">
+    <div class="bg-light p-5 rounded-lg m-3  mt-5">
+      <h1 class="display-1">No services at the moment!</h1>
+      
+     </div>
+  </main>
+  <% }%>
+
+<%- include partials/bottom-nav.ejs %>
+  </body>
+  
+<% include partials/footer.ejs %>
